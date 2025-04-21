@@ -1,0 +1,94 @@
+:root{
+    --main-bg-color: #200037;
+    --main-h1-color: #ffcc00;
+    --text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7), -2px -2px 5px rgba(255, 0, 0, 0.7);
+    --main-text-color: #ffffff;
+    --main-link-color: #0000ff;
+    --main-link-hover-color: #0000cc;
+    --main-border-color: #ccc;
+    --main-border-radius: 17px;
+    --main-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.761), 2px 2px 10px rgb(255, 0, 0);
+    --main-transition: all 0.3s ease;
+    --container-bg-color: #7a4500;
+    --container-hover-bg-color: #b78600;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+}
+
+h1{
+    color: var(--main-h1-color);
+    text-shadow: var(--text-shadow);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.container{
+    background-color: var(--container-bg-color);
+    color: #333;
+    padding: 1rem;
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--main-box-shadow);
+    transition: var(--main-transition);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#number{
+    height: 32px;
+    padding: 4px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    background-color: var(--container-bg-color);
+    color: var(--main-text-color);
+    border: none;
+    border-bottom: var(--main-h1-color) 3px solid;
+    transition: var(--main-transition);
+    text-align: center;
+}
+
+#number:focus{
+    outline: none;
+}
+
+#number::placeholder{
+    color: var(--main-text-color);
+}
+
+#convert-btn{
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--main-h1-color);
+    border-radius: var(--main-border-radius);
+    max-width: 350px;
+    min-width: 150px;
+    margin: 0 auto;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+    text-align: center;
+}

@@ -1,0 +1,121 @@
+:root{
+    --background-color: #5b3e00;
+    --form-background-color: #2900ab;
+    --text-color: #f1f1f1;
+    --button-color: #e5920c;
+    --button-hover-color: #f4b907;
+    --button-text-color: #5e5e5e;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    text-shadow: 0 0 3px #000000, 0 0 15px rgb(0, 255, 89);
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 1000px;
+}
+
+.container{
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form{
+    background-color: var(--form-background-color);
+    padding: 13px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#label-enter-input{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgb(255, 208, 0), 0 0 25px rgb(147, 96, 0), 0 0 5px rgb(0, 0, 0),1px 1px 2px rgb(255, 208, 0), 0 0 25px rgb(147, 96, 0), 0 0 5px rgb(0, 0, 0);
+}
+
+input{
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+#results-div{
+    background-color: #3d1ab2;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+button{
+    background-color: var(--button-color);
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+button:hover{
+    background-color: var(--button-hover-color);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.good-result{
+    color: #00ff00;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.bad-result{
+    color: #ff0000;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #ffffff;
+    --secondary-color: #333;
+    --background-color: #0f0f0f;
+    --h1-color: #ff6200;
+    --border-radius: 0.25rem;
+    --transition: all 0.2s ease-in-out;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--h1-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#main-container, #palindrome-explained{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#text-input{
+    width: 90%;
+    height: 32px;
+    padding: 4px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-bottom: var(--h1-color) 3px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+    transition: var(--transition);
+    text-align: center;
+}
+
+#text-input:focus{
+    border-bottom: #8326fd 3px solid;
+}
+
+#text-input::placeholder{
+    color: #b6b6b6;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#check-btn{
+    width: 50%;
+    min-width: 130px;
+    max-width: 300px;
+    height: 32px;
+    padding: 4px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: var(--h1-color);
+    color: #000000;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#check-btn:hover{
+    background-color: #ffaa00;
+}
+
+#palindrome-explained{
+    background-color: rgb(25, 136, 0);
+    color: #000000;
+    font-weight: 700;
+}
