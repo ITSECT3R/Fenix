@@ -1,0 +1,90 @@
+/* ...existing code... */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(40deg, #2f20ff 0, #000000 100%);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #fdfdfd;
+  height: 100vh;
+}
+
+a{
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: .2s ease;
+  position: relative;
+}
+
+a:hover {
+  color: rgb(223, 146, 14);
+  top: 1px;
+}
+
+#title {
+  margin-bottom: 0.2em;
+}
+
+#description {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  color: #ffffff;
+}
+
+#treemap {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 0 auto 2em auto;
+  display: block;
+}
+
+.tile {
+  stroke: #fff;
+  stroke-width: 1px;
+  cursor: pointer;
+}
+
+.tile-text {
+  font-size: 11px;
+  pointer-events: none;
+  fill: #222;
+}
+
+#legend {
+  margin-bottom: 2em;
+
+}
+
+.legend-item {
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.legend-color {
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.legend-label {
+  font-size: 13px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-size: 13px;
+  z-index: 10;
+  min-width: 120px;
+  text-align: left;
+}
+
+/* ...existing code... */

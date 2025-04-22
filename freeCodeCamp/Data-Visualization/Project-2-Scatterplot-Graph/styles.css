@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #5c1cf1 0%, #2186d9 100%);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+#title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+}
+
+#scatterplot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+svg {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+}
+
+.dot {
+  stroke: #333;
+  stroke-width: 1px;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: r 0.2s;
+}
+
+.dot:hover {
+  stroke: #111;
+  stroke-width: 2px;
+  opacity: 1;
+  r: 10;
+}
+
+#tooltip {
+  min-width: 180px;
+  max-width: 300px;
+  font-size: 1em;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  pointer-events: none;
+  z-index: 10;
+}

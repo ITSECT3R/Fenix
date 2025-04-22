@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #001aff 0, #ff0000 100%);
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+main {
+  color: #fff;
+}
+
+#choropleth {
+  display: block;
+  margin: 40px auto 0 auto;
+  background: linear-gradient(to right, #001aff 0, #ff0000 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  box-shadow: #d4d4d4 0 0 10px 1px , #cfcfcf 0 0 20px 1px, #cfcfcf 0 0 30px 1px;
+}
+
+.county {
+  stroke: #fff;
+  stroke-width: 0.3;
+  cursor: pointer;
+  transition: stroke 0.2s;
+}
+
+.county:hover {
+  stroke: #222;
+  stroke-width: 1.2;
+}
+
+#legend {
+  font-size: 12px;
+}
+
+#tooltip {
+  font-size: 14px;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+}
